@@ -47,7 +47,7 @@ body {
 }
 
 .cover-container {
-  max-width: 50em;
+  width: 50em;
 }
 /*
  * Header
@@ -130,6 +130,36 @@ body {
     font-weight: 300;
     line-height: 1.2;
   }
+}
+
+/*
+ * Project card
+ */
+
+.project-card {
+  background-color: #204263;
+  border-color: #204263;
+  width: 18rem;
+}
+
+.project-card .card-link {
+  display: inline-block;
+}
+
+.project-card .card-link:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px #fff;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.project-card .card-link:hover {
+  transform-origin:  0 50%;
+}
+
+.project-card .card-link:hover:after {
+  transform: scaleX(1);
 }
 
 /*
